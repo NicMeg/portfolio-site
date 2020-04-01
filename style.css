@@ -1,18 +1,17 @@
 * {
-  box-sizing: border-box;
   padding: 0;
+  /* This is to tells browser to not add any padding.*/
   margin: 0;
+  /* This is to tells browser to not add any margin.*/
+  box-sizing: border-box;
+  /* Change box model so border and padding are not longer added to total width/height*/
 }
 
 .parent {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	/* justify-content: space-between; */
-  /* flex-wrap: wrap;
-	align-items: flex-start; */
+  display: flex;
+  width: 100%;
   flex-direction: column;
-  background-color: #111111;
+  /* background-color: #111111; */
 }
 
 nav {
@@ -45,38 +44,92 @@ nav h1 {
 
 .header {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 600px;
+  height: calc(100vh - 100px);
   width: 100%;
-  background-color: rgba(0, 255, 255, 0.187);
+  position: relative;
+}
+
+
+.hero-image {
+  position: absolute;
+  max-width: 1000px;
+  bottom: 0px;
+  left: 75px;
+}
+
+.hero-image img {
+  width: 50%;
 }
 
 .black-bar {
-  height: 100px;
+  height: 135px;
   width: 100%;
-  /* justify-content: flex-end; */
-  /* align-items: flex-end; */
   align-self: flex-end;
-  background-color: blueviolet;
+  background-color: black;
 }
 
 .about {
   display: flex;
-  height: 200px;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
   width: 100%;
   background: brown;
 }
 
+.about-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 95%;
+  background-image: url(/images/about-background.jpg);
+  background-size: 100%;
+  object-fit: cover;
+  /* object-position: 140% 90%; */
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: black;
+}
+
+.about-me-text p {
+  color: aliceblue;
+}
+
 .skills {
   display: flex;
-  height: 200px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
   width: 100%;
   background-color: darkgoldenrod;
 }
 
+.skills-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background: url(/images/skills-background.jpg)/* image */
+  left center / 50% 50%/* position / size */
+  no-repeat/* repeat */
+  scroll/* attachment */
+  padding-box/* origin */
+  content-box/* clip */
+  white;
+  /* color */
+  background-position: right 35% bottom 45%;
+}
+
+.skills-box img {
+  object-fit: cover;
+}
+
 .projects {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 100%;
   background: darkkhaki;
@@ -84,7 +137,18 @@ nav h1 {
 
 .contact {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 100%;
   background: darksalmon;
+}
+
+.section-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  background: beige;
 }
