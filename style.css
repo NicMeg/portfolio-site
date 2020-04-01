@@ -11,7 +11,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  /* background-color: #111111; */
+  background-color: #111111;
 }
 
 nav {
@@ -59,31 +59,30 @@ nav h1 {
   padding: 40px;
 }
 
-.hero-image .bottom, .top {
+.welcome-message h1, h3 {
+  color: aliceblue;
+}
+
+.hero-image {
+  width: calc(70vh - 200px);
+  /* width: 30vw; */
+}
+
+.hero-image .bottom {
   position: absolute;
-  max-width: 1000px;
   bottom: 0px;
-  left: 75px;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  left: 74px;
 }
 
 .hero-image .top {
   position: absolute;
-  max-width: 1000px;
   bottom: 0px;
   left: 75px;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
 }
 
-.hero-image > img {
+.hero-image>img {
   position: relative;
-  width: 600px;
+  width: inherit;
   -webkit-transition: opacity 2s;
   -moz-transition: opacity 2s;
   -o-transition: opacity 2s;
@@ -92,10 +91,6 @@ nav h1 {
 
 .hero-image img.top:hover {
   opacity: 0;
-}
-
-.hero-image img.bottom {
-    /* z-index: -1; */
 }
 
 .black-bar {
@@ -118,19 +113,22 @@ nav h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  height: 95%;
-  background-image: url(/images/about-background.jpg);
-  background-size: 100%;
-  object-fit: cover;
-  /* object-position: 140% 90%; */
-  background-repeat: no-repeat;
-  background-position: left;
+  background-image: url("/images/about-background.png");
   background-color: black;
+  background-size: cover;
+  width: 80%;
+  height: 80%;
 }
 
-.about-me-text p {
+.about-box p {
   color: aliceblue;
+    width: 50%;
+  height: 50%;
+  padding: 20px;
+  border: 10px solid green;
+  background-color: greenyellow;
+  
+  /* border-color: darkcyan; */
 }
 
 .skills {
@@ -169,7 +167,7 @@ nav h1 {
   align-items: center;
   height: 200px;
   width: 100%;
-  background: darkkhaki;
+  /* background: darkkhaki; */
 }
 
 .contact {
@@ -178,7 +176,7 @@ nav h1 {
   align-items: center;
   height: 200px;
   width: 100%;
-  background: darksalmon;
+  /* background: darksalmon; */
 }
 
 .section-box {
