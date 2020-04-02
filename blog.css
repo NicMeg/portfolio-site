@@ -1,0 +1,47 @@
+body {
+  background-color: #111111;
+  font-family: 'Space Mono', monospace;
+}
+
+a{
+  text-decoration: none;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+.blog-post {
+  width: 300px;
+  background-color: black;
+  height: 550px;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: 30px;
+}
+
+.blog-post img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.blog-post p {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}

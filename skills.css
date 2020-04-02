@@ -25,7 +25,7 @@
   color: aliceblue;
   width: 50%;
   height: 50%;
-  padding: 20px;
+  padding: 50px;
   /* border: 10px solid green; */
   background-color: black;
 }
@@ -43,19 +43,28 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   /* grid-gap: 40px 40px; */
+  max-width: 100%;
 }
 
 .dev-logo {
   display: flex;
   width: 100px;
   height: 10px;
-  color: #00CC83;
+  color: yellow;
   font-size: 80px;
   text-align: center;
   justify-content: center;
 }
 
 @media screen and (max-width: 600px) {
+  .skills-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    background-color: #111111;
+  }
   .skills-box {
     display: flex;
     justify-content: flex-start;
@@ -66,13 +75,14 @@
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 100px;
+    background-position-x: 60px;
     width: 80%;
     height: 80%;
   }
   .dev-logo {
     display: flex;
     width: 50px;
-    color: #00CC83;
+    color: yellow;
     font-size: 90px;
     text-align: center;
     justify-content: center;

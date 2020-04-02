@@ -1,0 +1,70 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+  background-color: #111111;
+  font-family: 'Space Mono', monospace;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 240px;
+  background-image: url("/images/contact-background.png");
+  background-color: yellow;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 80px;
+  width: 80%;
+  height: 80%;
+}
+
+.form {
+  background-color: #111111;
+  padding: 50px;
+  width: 40vw;
+  border-radius: 5px;
+}
+
+.form h2 {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.top_input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_input div {
+  width: 45%;
+}
+
+textarea {
+  width: 100%;
+  height: 10vh;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;;
+}
+
+.github {
+  font-size: 70px;
+  padding-top: 70px;
+}

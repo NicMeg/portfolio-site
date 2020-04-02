@@ -7,22 +7,10 @@
   background-color: #111111;
 }
 
-/* .about-box {
+.about-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/about-background.png");
-  background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 80%;
-  height: 80%;
-} */
-
-.about-box {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
   background-image: url("/images/about-background.png");
   background-color: black;
   background-size: contain;
@@ -31,13 +19,35 @@
   background-position-y: 100px;
   width: 80%;
   height: 80%;
+  padding: 60px;
 }
 
-.about-box p {
-  color: aliceblue;
-  width: 50%;
-  height: 50%;
-  padding: 20px;
+.about-text {
+  color: black;
+  width: 80%;
+  padding: 30px;
   /* border: 10px solid green; */
-  background-color: black;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .about{about-text
+    height: 700px;
+  }
+  .about-text {
+    color: black;
+    width: 100%;
+    padding: 30px;
+    background-color: yellow;
+    border-radius: 45px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  .about-box {
+    background-position-y: 40px;
+    background-position-x: -60px;
+    padding: 30px;
+  }
 }
