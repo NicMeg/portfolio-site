@@ -1,0 +1,57 @@
+.projects-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+  background-color: #111111;
+}
+
+.projects-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/projects-background.png");
+  background-color: black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: 100px;
+  width: 80%;
+  height: 80%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 7%;
+  height: 30vh;
+}
+
+.zone {
+  cursor: pointer;
+  list-style-type: circle;
+  /* display: inline-block; */
+  text-align: left;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+  text-decoration: azure;
+  transition: all 0.3s linear;
+}
+
+.display-zone {
+  background-color: slategray;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-card-box {
+  background-color: tomato;
+  border-radius: 8px;
+  height: 80%;
+  width: 80%;
+}
