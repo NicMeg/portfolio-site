@@ -8,7 +8,10 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="skills.css">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
@@ -17,32 +20,28 @@
     <nav class="navbar">
       <h1 class="name">Nic Megoran</h1>
       <ul class="nav-links">
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Skills</a></li>
-        <li class="nav-item"><a href="#">Projects</a></li>
-        <li class="nav-item"><a href="#">Blog</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#skills-top">Skills</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">contact</a></li>
+        <li class="nav-item"><a href="#blog">Blog</a></li>
       </ul>
     </nav>
 
     <header class="header">
-
       <div class="welcome-message">
         <h1>Hi, I'm Nic!</h1>
         <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, adipisci.</h3>
       </div>
-
       <div class="black-bar">
-        
         <div class="hero-image">
           <img class="bottom" src="/images/hero-light.png" />
           <img class="top" src="/images/hero-dark.png" />
         </div>
-
       </div>
-
-
     </header>
 
+    <a name="about"></a>
     <section class="about">
       <div class="about-box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, rem ipsum possimus iste
@@ -53,23 +52,72 @@
       </div>
     </section>
 
-    <section class="skills">
+
+
+    <a name="skills-top"></a>
+    
+    <section class="skills-section">
       <div class="skills-box">
-        <h1>SKILLS</h1>
-      </div>
+        <!-- This is my logo grid -->
+        <div class="grid-container">
+          <div class="logo-grid" id="skills-container">
+            <div class="dev-logo">
+              <i class="devicon-css3-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-html5-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-rails-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-git-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-nodejs-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-ruby-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-mongodb-plain"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-react-original"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-express-original"></i>
+            </div>
+            <div class="dev-logo">
+              <i class="devicon-amazonwebservices-original"></i>
+            </div>
+          </div>
+        </div>
     </section>
+    <section id="projects">
 
-    <section class="projects">
-      <div class="section-box">
-        <h1>PROJECTS</h1>
-      </div>
+      </ul>
+      <h1>SKILLS</h1>
+  </div>
+  </section>
 
-    </section>
-    <section class="contact">
-      <div class="section-box">
-        <h1>Contact</h1>
-      </div>
-    </section>
+  <a name="projects"></a>
+  <section class="projects">
+
+    <div class="section-box">
+      <h1>PROJECTS</h1>
+    </div>
+  </section>
+
+  <a name="contact"></a>
+  <section class="contact">
+    <div class="section-box">
+      <h1>Contact</h1>
+    </div>
+  </section>
 
 </body>
 
