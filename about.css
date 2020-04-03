@@ -32,7 +32,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .about{about-text
+  .about {
     height: 700px;
   }
   .about-text {
