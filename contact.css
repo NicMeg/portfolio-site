@@ -13,13 +13,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 240px;
+  padding-top: 130px;
   background-image: url("/images/contact-background.png");
   background-color: yellow;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 80px;
+  background-position-y: 30px;
   width: 80%;
   height: 80%;
 }
@@ -61,10 +61,48 @@ textarea {
 
 button {
   padding: 10px 20px;
-  border-radius: 5px;;
+  border-radius: 5px;
+  ;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .github {
-  font-size: 70px;
-  padding-top: 70px;
+  font-size: 36px;
+  /* padding-top: 90px; */
+  padding-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+.github:hover {
+  color: #555555;
+}
+
+.basic-bttn {
+  background-color: black;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 9px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

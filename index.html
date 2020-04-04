@@ -21,6 +21,7 @@
 <body>
   <div class="parent">
 
+    <!-- This is the navigation bar for my site -->
     <nav class="navbar">
       <h1 class="name">Nic Megoran</h1>
       <ul class="nav-links">
@@ -32,7 +33,11 @@
       </ul>
     </nav>
 
+    <!-- This is the header section of my site  -->
     <header class="header">
+
+
+      <!-- This is the welcome message box that appears in my header section -->
       <div class="welcome-message">
         <h1>Hello.</h1>
         <h1>I'm Nic!</h1>
@@ -46,20 +51,23 @@
       </div>
     </header>
 
+    <!-- This is the about me section that appears below my header section -->
     <a name="about"></a>
     <section class="about">
       <div class="about-box">
         <div class="about-text">
           <p>
-            Hi, I’m Nic. A Full-stack Developer based in Melbourne, Australia. Currently studying at CoderAcadmey
-            FullStack Bootcamp. Proficient in HTML5, CSS3, JavaScript, Ruby on Rails, React.
-
-            I'm a creative problem solver, fascinated with all things related to design and tech.</p>
+            Hi, I’m Nic.
+            <br> <br> A Full-stack Developer based in Melbourne, Australia. Currently studying at CoderAcadmey
+            FullStack Bootcamp. Proficient in HTML5, CSS3, JavaScript, Ruby on Rails, React.</p>
+          <br>
+          <p>I'm a creative problem solver, fascinated with all things related to design and tech.</p>
         </div>
       </div>
     </section>
 
 
+    <!-- This is the skills section that appears below my about me section -->
 
     <a name="skills-top"></a>
 
@@ -101,12 +109,15 @@
             <div class="dev-logo">
               <i class="devicon-amazonwebservices-original"></i>
             </div>
+            <div class="dev-logo">
+              <i class="devicon-postgresql-plain"></i>
+            </div>
           </div>
         </div>
     </section>
 
+    <!-- This is the projects section that appears below skills section -->
     <a name="projects-top"></a>
-
     <section class="projects-section">
       <div class="projects-box">
         <!-- This is my logo grid -->
@@ -127,25 +138,35 @@
               </li>
             </ul>
           </div>
-          
+          <!-- This section shows the projects i have worked on. It still needs some work. -->
           <div class="display-zone">
             <div class="outer-card-box">
               <div class="inner-card-box">
-                <p>Terminal App</p>
-              </div>
 
+                <p>Terminal App</p>
+                <a href="https://github.com/NicMeg/flashcard">
+                  <div class="github">
+                    <i class="devicon-github-plain"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="label-tag">
-              <p>Ruby</p>
+            <div>
+              <p class="stack">Tech Stack</p>
+              <div class="stack-elements">
+                <p class="label-tag">Command Line</p>
+                <p class="label-tag">Ruby</p>
+              </div>
             </div>
           </div>
         </div>
     </section>
 
+    <!-- This is the contact me section -->
     <a name="contact"></a>
     <section class="contact-section">
       <div class="contact-box">
-        <div class="contact" id="contact">
+        <div class="form-box" id="contact">
           <div class="form">
             <h2 id="contacth2">Contact.</h2>
             <form name="contact" method="POST" data-netlify="true">
@@ -170,8 +191,19 @@
             </form>
           </div>
         </div>
-        <div class="github">
-          <i class="devicon-github-plain"></i>
+        <div class="contact-links">
+          <a href="https://github.com/NicMeg">
+            <div class="github">
+              <i class="devicon-github-plain"></i>
+            </div>
+          </a>
+          <a href="/resume.pdf" target="_blank">
+            <div class="resume basic-bttn lack-bttn">
+
+              <p class="resume">Resume</p>
+
+            </div>
+          </a>
         </div>
       </div>
     </section>

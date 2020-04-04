@@ -10,7 +10,7 @@
 .skills-box {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
   background-image: url("/images/skills-background.png");
   background-color: black;
   background-size: contain;

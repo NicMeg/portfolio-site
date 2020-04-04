@@ -55,7 +55,12 @@
 .project-list-item {
   list-style: none;
   color: white;
-  background-color: black;
+  /* background-color: black; */
+}
+
+.project-list-item:hover {
+    color: yellow;
+
 }
 
 .display-zone {
@@ -78,6 +83,8 @@
   height: 80%;
   width: 80%;
   margin: 10px;
+  height: 300px;
+width: 350px;
 }
 
 .outer-card-box p {
@@ -98,15 +105,34 @@
   margin: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .label-tag {
-  background-color: springgreen;
+  background-color: yellow;
   border-radius: 10px;
-  padding: 3px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
 }
 
 .label-tag p {
   color: black;
   padding: 5px, 5px;
+
+}
+
+.stack {
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* display: inline;
+  height: 50px; */
+}
+.stack-elements {
+display: flex;
+justify-content: space-between;
+padding: 10px;
 }
